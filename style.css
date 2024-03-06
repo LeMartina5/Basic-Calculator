@@ -1,0 +1,56 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calc-container {
+    width: 300px;
+    height: 400px;
+    background-color: slateblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.display-box {
+    background-color: white;
+    width: 280px;
+    height: 50px;
+    font-size: 2rem;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center
+}
+
+.display-box p {
+    margin: 0;
+}
+
+.key-pad {
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+    grid-template-rows: repeat(5, 70px);
+    border: 1px solid black;
+}
+
+.key-pad button {
+    cursor: pointer;
+    outline: none;
+    border-style: none;
+    border: 1px solid black;
+    background-color: pink;
+}
+
+.span-two {
+    grid-column: span 2;
+}
